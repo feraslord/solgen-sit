@@ -55,9 +55,8 @@
       localStorage.removeItem("solgenUser");
       window.location.href = "login.html";
     }
-  </script>
+  </script>const user = localStorage.getItem("solgenUser");
+document.getElementById("user-name").innerText = user || "Guest";
 
 </body>
 </html>
-const user = localStorage.getItem("solgenUser");
-document.getElementById("user-name").innerText = user || "Guest";
