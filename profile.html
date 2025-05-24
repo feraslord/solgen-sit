@@ -59,3 +59,5 @@
 
 </body>
 </html>
+const user = localStorage.getItem("solgenUser");
+document.getElementById("user-name").innerText = user || "Guest";
