@@ -110,12 +110,11 @@
   </div>
 </nav>
 
-<script>
+<script>const user = localStorage.getItem("solgenUser");
+document.getElementById("user-name").innerText = user || "Guest";
   function logout() {
     localStorage.removeItem("solgenUser");
     window.location.href = "login.html";
   }
 </script>
 <a href="index.html" class="btn btn-outline-light mt-4">← Back to Home</a>
-const user = localStorage.getItem("solgenUser");
-document.getElementById("user-name").innerText = user || "Guest";
